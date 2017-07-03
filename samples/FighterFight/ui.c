@@ -12,12 +12,12 @@
 #define BITMAP_FILE_BK		"cloud.bmp"
 
 #define TIMER_ID			12340                                                           
-#define TRANS_BK_COLOR		RGB(255,255,255)
+#define TRANS_BK_COLOR		RGB(255,0,255)
 #define FIGHTER_HEIGHT		50
 #define FIGHTER_WIDTH		50
 
 
-#define FIGHTER_MOVE_STEP	5		// 飞机在方向键的作用下，每次移动的像素；
+#define FIGHTER_MOVE_STEP	20		// 飞机在方向键的作用下，每次移动的像素；
 
 #define GAME_HEIGHT 1000
 #define GAME_WIDTH	500
@@ -33,8 +33,8 @@ HWND hwndBackground;
 HBITMAP hbmpFighter;
 HBITMAP hbmpBackground;
 
-#define COLOR_BULLET	RGB(0,255,0)
-#define COLOR_ENEMY		RGB(255,0,255)
+#define COLOR_BULLET	RGB(0,0,0)
+#define COLOR_ENEMY		RGB(0,0,0)
 #define COLOR_BOMB		RGB(255, 0, 0)
 
 POINT ptFighter;
