@@ -1,7 +1,3 @@
 ﻿  ui.c
-  snake_and_food.c
-  LinkList.c
-  game_opration.c
-  Generating Code...
   Snake.vcxproj -> C:\Users\wzycu\summer_semester\samples\Debug\Snake.exe
   Snake.vcxproj -> C:\Users\wzycu\summer_semester\samples\Debug\Snake.pdb (Full PDB)

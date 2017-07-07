@@ -264,7 +264,7 @@ void GamePaint(HWND hwnd)
 	hbrushFood = CreateSolidBrush(COLOR_FOOD); // RGB颜色，实心BRUSH
 	hpen = CreatePen(PS_NULL, 0, RGB(0, 0, 0));  // PEN， PS_NULL表示不可见
 	hBrushSnake = CreateSolidBrush(COLOR_SNAKE);
-	hPenBoundary = CreatePen(0, 3, COLOR_BOUNDARY);
+	hPenBoundary = CreatePen(0, 5, COLOR_BOUNDARY);
 
 
 	/*******************************************************************************
