@@ -10,6 +10,10 @@
 #define Player1		1
 #define Player2 	2
 
+//原点坐标
+#define ChessBoardX 20
+#define ChessBoardY 20
+
 //定义每个格子的的边长
 #define ChessLengh  92 // 92个像素
 
@@ -44,24 +48,17 @@ typedef struct _Position
 	short y;
 }Position, *pPosition;
 
-void BackgroundPaint(HWND hwnd);
-
 // 获得边界坐标
 pPosition GetBoundary();
 
 //初始化棋盘（ChessBoard）
 void CreateChessBoard(HWND,int,int);
 
-//销毁棋盘（ChessBoard）
-void DistroyChessBoard();
-
 //判断坐标，改变棋盘的状态(下棋过程)
 int StepMove(HWND,LONG,LONG);
 
 //判断棋盘当前的状态(1获胜，2获胜，无赢家)
-status JudgeChessBoard();
+void JudgeChessBoard();
 
 //打印图像
 void GamePaint(HWND,LONG,LONG);
-
-

@@ -87,36 +87,7 @@ int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 //根据游戏坐标界面设置窗口大小
 void ReSizeGameWnd(HWND hwnd)
 {
-	//POINT ptLeftTop;		// 左上角
-	//POINT ptRightBottom;	// 右下角
-	//RECT rectWindow;
-	//pPosition pCoordBoundary = GetBoundary();
-
-	//// 设置游戏边界
-	//rectBoundary.left = 10;
-	//rectBoundary.top = 10;
-	//rectBoundary.right = 60 + CELL_PIXEL*(pCoordBoundary->x + 1);
-	//rectBoundary.bottom = 60 + CELL_PIXEL*(pCoordBoundary->y + 1);
-
-	//// 计算上下左右角的位置
-	//ptLeftTop.x = rectBoundary.left;
-	//ptLeftTop.y = rectBoundary.top;
-	//ptRightBottom.x = rectBoundary.right;
-	//ptRightBottom.y = rectBoundary.bottom;
-	//ClientToScreen(hwnd, &ptLeftTop);
-	//ClientToScreen(hwnd, &ptRightBottom);
-
-	//GetWindowRect(hwnd, &rectWindow);
-	// 计算好了，设置窗口大小。
-	//MoveWindow(hwnd,
-	//	rectWindow.left,
-	//	rectWindow.top,
-	//	ptLeftTop.x - rectWindow.left + ptRightBottom.x - rectWindow.left, // 保存边界和左右两边边框相等。
-	//	rectBoundary.bottom + 120, //给积分信息留出显示空间。
-	//	TRUE);
-	MoveWindow(hwnd,
-		90,90,328,360, 
-		TRUE);
+	MoveWindow(hwnd,90,90,328,360, TRUE);
 }
 
 //窗口函数
@@ -141,7 +112,8 @@ LONG CALLBACK MainWndProc(	HWND hwnd,                 // 句柄
 	case WM_LBUTTONDOWN:
 		pos.x = LOWORD(lParam);
 		pos.y = HIWORD(lParam);
-		//StepMove(hwnd,pos.x,pos.y);	
+		StepMove(hwnd,pos.x,pos.y);	
+
 		GamePaint(hwnd,pos.x,pos.y);
 		JudgeChessBoard();
 		break;
