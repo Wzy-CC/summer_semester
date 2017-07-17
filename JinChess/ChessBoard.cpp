@@ -101,6 +101,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 112 && _posx >= 20 && _posy >= 19 && _posy < 110 && ChessBoard[0][0] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move --;
 	}
 	if (_posx < 112 && _posx >= 20 && _posy >= 19 && _posy < 110 && ChessBoard[0][0] == CheckerNull)
 	{
@@ -117,7 +118,8 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 
 	if (_posx < 204 && _posx >= 112 && _posy >= 19 && _posy < 110 && ChessBoard[0][1] != CheckerNull)
 	{
-		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK); 
+		Move--;
 	}
 	if (_posx < 204 && _posx >= 112 && _posy >= 19 && _posy < 110 && ChessBoard[0][1] == CheckerNull)
 	{
@@ -135,6 +137,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 295 && _posx >= 204 && _posy >= 19 && _posy < 110 && ChessBoard[0][2] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 295 && _posx >= 204 && _posy >= 19 && _posy < 110 && ChessBoard[0][2] == CheckerNull)
 	{
@@ -152,6 +155,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 112 && _posx >= 20 && _posy >= 110 && _posy < 202 && ChessBoard[1][0] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 112 && _posx >= 20 && _posy >= 110 && _posy < 202 && ChessBoard[1][0] == CheckerNull)
 	{
@@ -169,6 +173,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 204 && _posx >= 112 && _posy >= 110 && _posy < 202 && ChessBoard[1][1] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 204 && _posx >= 112 && _posy >= 110 && _posy < 202 && ChessBoard[1][1] == CheckerNull)
 	{
@@ -186,6 +191,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 295 && _posx >= 204 && _posy >= 110 && _posy < 202 && ChessBoard[1][2] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 295 && _posx >= 204 && _posy >= 110 && _posy < 202 && ChessBoard[1][2] == CheckerNull)
 	{
@@ -203,6 +209,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 112 && _posx >= 20 && _posy >= 202 && _posy < 293 && ChessBoard[2][0] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 112 && _posx >= 20 && _posy >= 202 && _posy < 293 && ChessBoard[2][0] == CheckerNull)
 	{
@@ -220,6 +227,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 204 && _posx >= 112 && _posy >= 202 && _posy < 293 && ChessBoard[2][1] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 204 && _posx >= 112 && _posy >= 202 && _posy < 293 && ChessBoard[2][1] == CheckerNull)
 	{
@@ -237,6 +245,7 @@ int StepMove(HWND _hwnd, LONG _posx, LONG _posy)
 	if (_posx < 295 && _posx >= 204 && _posy >= 202 && _posy < 293 && ChessBoard[2][2] != CheckerNull)
 	{
 		MessageBoxA(NULL, "这个位置已经有旗子了！", "错误！", MB_OK);
+		Move--;
 	}
 	if (_posx < 295 && _posx >= 204 && _posy >= 202 && _posy < 293 && ChessBoard[2][2] == CheckerNull)
 	{
